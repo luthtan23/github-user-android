@@ -11,6 +11,8 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
         <!-- Customize your theme here. -->
     </style>
 
@@ -25,10 +27,12 @@
         <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
         <item name="colorOnSecondary">@color/black</item>
 
-        <!--        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>-->
+        <item name="android:statusBarColor">@color/black</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="backgroundColor">@color/background_base_F2F5F7</item>
     </style>
 
     <!-- Base application theme. -->
@@ -72,5 +76,15 @@
 
     <style name="AppModalStyle.Transparent" parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">@drawable/rounded_dialog_transparent</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.Basearchitectureandroid.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
     </style>
 </resources>

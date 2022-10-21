@@ -1,8 +1,17 @@
 <resources>
-    <string name="app_name_prod">base-architecture-android</string>
-    <string name="app_name_staging">base-architecture-android Staging</string>
-    <string name="app_name_dev">base-architecture-android Dev</string>
+    <string name="app_name_prod">Github User</string>
+    <string name="app_name_staging">Github User Staging</string>
+    <string name="app_name_dev">Github User Dev</string>
     <string name="search">Search</string>
     <string name="menu_home">Home</string>
     <string name="menu_profile">Profile</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="data_is_empty">Data is Empty</string>
+    <string name="name_user">Muhammad Luthfi Tantowi</string>
+    <string name="android_developer">Android Developer</string>
+    <string name="public_repos">Public Repos</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="repositories">Repositories</string>
+    <string name="url">URL:</string>
 </resources>

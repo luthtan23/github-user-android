@@ -1,2 +1,2 @@
-rootProject.name = "base-architecture-android"
+rootProject.name = "github-user-android"
 include ':app'

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.luthtan.base_architecture_android">
+    package="com.luthtan.github_user_android">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -25,6 +25,7 @@
             android:exported="true"
             android:windowSoftInputMode="adjustResize"
             android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"
             android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
             tools:ignore="LockedOrientationActivity">
             <intent-filter>

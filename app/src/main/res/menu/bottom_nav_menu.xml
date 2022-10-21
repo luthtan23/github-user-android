@@ -7,7 +7,12 @@
         android:title="@string/menu_home" />
 
     <item
+        android:id="@id/favoriteFragment"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/menu_favorite" />
+
+    <item
         android:id="@id/profileFragment"
-        android:icon="@drawable/baseline_person_24"
+        android:icon="@drawable/ic_person_black_24dp"
         android:title="@string/menu_profile" />
 </menu>

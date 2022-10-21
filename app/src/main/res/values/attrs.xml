@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomToolbar">
+        <attr name="titleText" format="string"/>
+        <attr name="menuCancelText" format="string"/>
+        <attr name="showOptionMenu" format="boolean"/>
+        <attr name="showCancelText" format="boolean"/>
+        <attr name="isTitleDefaultPosition" format="boolean"/>
+        <attr name="hideBackButton" format="boolean"/>
+        <attr name="progress" format="integer"/>
+        <attr name="textColorOption" format="color"/>
+        <attr name="showProgress" format="boolean"/>
+        <attr name="backgroundColorToolbar" format="color"/>
+        <attr name="isSearch" format="boolean"/>
+    </declare-styleable>
+</resources>
