@@ -3,9 +3,9 @@ name: Build Dev Distribution
 on:
   workflow_dispatch:
   push:
-    branches: [base_bottom_navigation]
+    branches: [main]
   pull_request:
-    branches: [base_bottom_navigation]
+    branches: [main]
 
 jobs:
   build:
