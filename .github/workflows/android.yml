@@ -52,3 +52,9 @@ jobs:
 
       - name: Build Development APK and Deploy to Firebase App Distribution
         run: bundle exec fastlane android buildDev
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: app-release
+          path: app/build/outputs/apk/development/debug/app-development-debug.apk
