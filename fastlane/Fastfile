@@ -32,7 +32,14 @@ platform :android do
       lane :distribute do
           gradle(
                task: "clean assembleDebug",
-               print_command: true
+               print_command: false,
+               properties: {
+                       "android.injected.signing.store.file" => "keys/githubuser.jks",
+                       "android.injected.signing.store.password" => "githubuser",
+                       "android.injected.signing.key.alias" => "githubuser",
+                       "android.injected.signing.key.password" => "githubuser",
+                       "android.injected.version.code" => 50
+                     }
           )
       end
 end
