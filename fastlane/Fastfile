@@ -39,6 +39,7 @@ platform :android do
                        "android.injected.signing.key.alias" => "githubuser",
                        "android.injected.signing.key.password" => "githubuser",
                        "android.injected.version.code" => 50
+                       "android.injected.version.name" => "1.1.0",
                      }
           )
       end
