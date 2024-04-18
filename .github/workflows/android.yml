@@ -18,7 +18,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.6.10'
+          ruby-version: '3.0.0'
 
       - name: Cache Ruby - Bundler
         uses: actions/cache@v2
