@@ -1,0 +1,38 @@
+default_platform(:android)
+
+# add all ENV properties
+# run in terminal with 'fastlane buildDev'
+
+platform :android do
+
+  scheme = nil
+  output = nil
+  variant = nil
+  type = nil
+
+  desc "Build Dev"
+  lane :buildDev do
+    scheme = "Development"
+    output = "development"
+    variant = "debug"
+    type = "Debug"
+    distribute
+  end
+
+  desc "Build Production"
+  lane :buildProd do
+    scheme = "Production"
+    output = "production"
+    variant = "release"
+    type = "Release"
+    distribute
+  end
+
+  desc "Build bundle and Create APK for #{scheme}"
+      lane :distribute do
+          gradle(
+               task: "clean assembleDebug",
+               print_command: true
+          )
+      end
+end
