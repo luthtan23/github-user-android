@@ -3,9 +3,9 @@ name: Build Dev Distribution
 on:
   workflow_dispatch:
   push:
-    branches: [develop]
+    branches: [base_bottom_navigation]
   pull_request:
-    branches: [develop]
+    branches: [base_bottom_navigation]
 
 jobs:
   build:
@@ -18,7 +18,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7.2'
+          ruby-version: '3.0.0'
 
       - name: Cache Ruby - Bundler
         uses: actions/cache@v2
